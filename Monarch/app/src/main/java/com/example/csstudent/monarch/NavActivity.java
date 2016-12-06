@@ -1,51 +1,76 @@
 package com.example.csstudent.monarch;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.RadioButton;
-import android.widget.Toast;
 
-public class NavActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
-    RadioButton surpriseImage;
-    RadioButton toast;
-    ImageView newLogo;
-
+public class NavActivity extends AppCompatActivity{
+    DrawerLayout mDrawerLayout;
+    NavigationView mNavigationView;
+    FragmentManager mFragmentManager;
+    FragmentTransaction mFragmentTransaction;
+    //RadioButton surpriseImage;
+   // RadioButton toast;
+    //ImageView newLogo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nav);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        surpriseImage = (RadioButton)findViewById(R.id.radioButton);
-        toast = (RadioButton)findViewById(R.id.radioButton2);
-        newLogo = (ImageView)findViewById(R.id.newlogo);
+        //surpriseImage = (RadioButton)findViewById(R.id.radioButton);
+        //toast = (RadioButton)findViewById(R.id.radioButton2);
+        // newLogo = (ImageView)findViewById(R.id.newlogo);
+
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mNavigationView = (NavigationView) findViewById(R.id.nav_view);
+
+        mFragmentManager = getSupportFragmentManager();
+        mFragmentTransaction = mFragmentManager.beginTransaction();
+        mFragmentTransaction.replace(R.id.containerView, new TabFragment()).commit();
 
 
+        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
+                mDrawerLayout.closeDrawers();
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
-        toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+                if (menuItem.getItemId() == R.id.nav_home) {
+                    FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.containerView, new SentFragment()).commit();
+
+                }
+
+                if (menuItem.getItemId() == R.id.nav_announce) {
+                    FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
+                    xfragmentTransaction.replace(R.id.containerView, new TabFragment()).commit();
+                }
+                if (menuItem.getItemId() == R.id.nav_schedule) {
+                    FragmentTransaction yfragmentTransaction = mFragmentManager.beginTransaction();
+                    yfragmentTransaction.replace(R.id.containerView, new TabFragment()).commit();
+                }
+
+                return false;
+            }
+
+        });
+        android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
+        ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.app_name,
+                R.string.app_name);
+
+        mDrawerLayout.setDrawerListener(mDrawerToggle);
+
+        mDrawerToggle.syncState();
+    }
     }
 
 
-    @Override
+    /*@Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
@@ -56,22 +81,21 @@ public class NavActivity extends AppCompatActivity
 
 
     }
-    public void  check(View v) {
-        boolean checked = ((RadioButton) v).isChecked();
-        switch (v.getId()) {
-            case R.id.radioButton:
-                if (checked)
-                    newLogo.setVisibility(View.VISIBLE);
-                surpriseImage.setVisibility(View.INVISIBLE);
-                toast.setVisibility(View.INVISIBLE);
-                break;
-            case R.id.radioButton2:
-                if (checked)
-                    Toast.makeText(NavActivity.this, "Guess Not :/",
-                            Toast.LENGTH_LONG).show();
-break;
-        }
-    }
+   // public void  check(View v) {
+        //boolean checked = ((RadioButton) v).isChecked();
+        //switch (v.getId()) {
+           // case R.id.radioButton:
+              //  if (checked)
+              //  surpriseImage.setVisibility(View.INVISIBLE);
+              //  toast.setVisibility(View.INVISIBLE);
+              //  break;
+            //case R.id.radioButton2:
+              //  if (checked)
+              //      Toast.makeText(NavActivity.this, "Guess Not :/",
+                           // Toast.LENGTH_LONG).show();
+//break;
+       // }
+    //}
 
 
     @Override
@@ -114,4 +138,4 @@ break;
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-}
+}*/
