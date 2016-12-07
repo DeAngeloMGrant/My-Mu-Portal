@@ -3,29 +3,31 @@ App for Methodist University portal
 
 ---Needs to be done---
 -------
--!!-Have AppLabel change with frament Tab
+:heavy_check_mark: -!!-Have AppLabel change with frament Tab--Instead had tabs correspond with fragment, AppLabel will always equal Home in Home Activity--
 
--!!-Add Settings in Overflow button on AppBar
+:heavy_check_mark: -!!-Remove "Home" Item from NavagtionDrawer
 
--!!-Implement FireBase Signout
+:x: -!!-Add Settings in Overflow button on AppBar
 
--!!-Change info in About Fragment
+:x:-!!-Implement FireBase Signout
 
--!!-Add Student info in StudentInfo Fragment
+:x:-!!-Change info in About Fragment
 
--!!-Remove "Home" Item from NavagtionDrawer
+:x:-!!-Add Student info in StudentInfo Fragment
+
+
 
 ---Has been completed---
 -----
--Added Tab Layout to Home Avtivity(NavActivity)
+:heavy_check_mark:-Added Tab Layout to Home Avtivity(NavActivity)
 
--Three new Fragments(InfoFragment,AboutFragment,SignoutFragment)
+:heavy_check_mark:-Three new Fragments(InfoFragment,AboutFragment,SignoutFragment)
 
--SignoutFragment will be change to a single menu item on NavigationDrawer
+:heavy_check_mark:-SignoutFragment will be change to a single menu item on NavigationDrawer
 
--ScrollView on AboutFragment
+:heavy_check_mark:-ScrollView on AboutFragment
 
--Implemented back button on AnnouncementsActivity and ScheduleActivity
+:heavy_check_mark:-Implemented back button on AnnouncementsActivity and ScheduleActivity
 
 If you have any questions, comments, or ideas send an email to support@v0lture.com
 ------
