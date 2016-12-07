@@ -38,8 +38,26 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.csstudent.monarch.LoginActivity" />
         </activity>
-        <activity android:name=".AnnounceActivity" />
-        <activity android:name=".ScheduleActivity"></activity>
+        <activity android:name=".AnnounceActivity"
+            android:label="Announcements"
+            android:parentActivityName=".NavActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.csstudent.monarch.NavActivity"/>
+        </activity>
+        <activity android:name=".ScheduleActivity"
+            android:label="Schedule"
+            android:parentActivityName=".NavActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.csstudent.monarch.NavActivity"/>
+        </activity>
+        <activity
+            android:name=".AboutFragment"
+            android:label="@string/title_activity_about_fragment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".InfoFragment" />
+        <activity android:name=".SignoutFragment"></activity>
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package com.example.csstudent.monarch;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
@@ -40,19 +41,17 @@ public class NavActivity extends AppCompatActivity{
                 mDrawerLayout.closeDrawers();
 
 
-                if (menuItem.getItemId() == R.id.nav_home) {
+                /*if (menuItem.getItemId() == R.id.nav_home) {
                     FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-                    fragmentTransaction.replace(R.id.containerView, new SentFragment()).commit();
+                    fragmentTransaction.replace(R.id.containerView,  new NavActivity()).commit();
 
-                }
+                }*/
 
                 if (menuItem.getItemId() == R.id.nav_announce) {
-                    FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
-                    xfragmentTransaction.replace(R.id.containerView, new TabFragment()).commit();
+                    startActivity(new Intent(NavActivity.this, AnnounceActivity.class));
                 }
                 if (menuItem.getItemId() == R.id.nav_schedule) {
-                    FragmentTransaction yfragmentTransaction = mFragmentManager.beginTransaction();
-                    yfragmentTransaction.replace(R.id.containerView, new TabFragment()).commit();
+                    startActivity(new Intent(NavActivity.this, ScheduleActivity.class));
                 }
 
                 return false;

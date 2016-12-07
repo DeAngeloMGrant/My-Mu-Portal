@@ -21,5 +21,7 @@
     <dimen name="card_title">15dp</dimen>
     <dimen name="detail_padding_bottom">5dp</dimen>
     <dimen name="detail">12dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
 
 </resources>
