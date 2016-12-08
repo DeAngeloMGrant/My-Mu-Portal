@@ -10,4 +10,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.csstudent.monarch.InfoFragment">
 
+    <TextView
+        android:textAppearance="?attr/textAppearanceLargePopupMenu"
+        android:text="This fragment will show the info of the student logged in, whenever I implement the database"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView2" />
 </RelativeLayout>

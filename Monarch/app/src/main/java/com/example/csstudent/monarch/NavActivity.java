@@ -10,11 +10,14 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
+
+
 public class NavActivity extends AppCompatActivity{
     DrawerLayout mDrawerLayout;
     NavigationView mNavigationView;
     FragmentManager mFragmentManager;
     FragmentTransaction mFragmentTransaction;
+
     //RadioButton surpriseImage;
    // RadioButton toast;
     //ImageView newLogo;
@@ -26,6 +29,8 @@ public class NavActivity extends AppCompatActivity{
         //surpriseImage = (RadioButton)findViewById(R.id.radioButton);
         //toast = (RadioButton)findViewById(R.id.radioButton2);
         // newLogo = (ImageView)findViewById(R.id.newlogo);
+
+
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mNavigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -53,6 +58,9 @@ public class NavActivity extends AppCompatActivity{
                 if (menuItem.getItemId() == R.id.nav_schedule) {
                     startActivity(new Intent(NavActivity.this, ScheduleActivity.class));
                 }
+                if (menuItem.getItemId() == R.id.out) {
+                    startActivity(new Intent(NavActivity.this, SignOut.class));
+                }
 
                 return false;
             }
@@ -66,9 +74,8 @@ public class NavActivity extends AppCompatActivity{
 
         mDrawerToggle.syncState();
     }
-    }
 
-
+}
     /*@Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

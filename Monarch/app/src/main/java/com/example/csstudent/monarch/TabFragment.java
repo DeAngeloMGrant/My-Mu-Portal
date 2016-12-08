@@ -20,7 +20,7 @@ import android.view.ViewGroup;
 public class TabFragment extends Fragment {
     public static TabLayout tabLayout;
     public static ViewPager viewPager;
-    public static int int_items = 3;
+    public static int int_items = 2;
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
     @Nullable
@@ -64,8 +64,7 @@ public class TabFragment extends Fragment {
                     return new AboutFragment();
                 case 1:
                     return new InfoFragment();
-                case 2:
-                    return new SignoutFragment();
+
             }
             return null;
         }
@@ -83,8 +82,7 @@ public class TabFragment extends Fragment {
                     return "About";
                 case 1:
                     return "Student Info";
-                case 2:
-                    return "Sign Out";
+
             }
             return null;
         }

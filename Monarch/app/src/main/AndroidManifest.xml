@@ -57,7 +57,12 @@
             android:label="@string/title_activity_about_fragment"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".InfoFragment" />
-        <activity android:name=".SignoutFragment"></activity>
+        <activity android:name=".SignOut"
+            android:parentActivityName=".NavActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.csstudent.monarch.LoginActivity"/>
+        </activity>
     </application>
 
 </manifest>
