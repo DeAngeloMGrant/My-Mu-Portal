@@ -9,11 +9,11 @@ App for Methodist University portal
 
 :x: -!!-Add Settings in Overflow button on AppBar
 
-:x:-!!-Implement FireBase Signout
+:heavy_check_mark:-!!-Implement FireBase Signout
 
-:x:-!!-Change info in About Fragment
+:heavy_check_mark:-!!-Change info in About Fragment
 
-:x:-!!-Add Student info in StudentInfo Fragment
+:x:-!!-Link Student info database from Google FireBase to StudentInfo Fragment
 
 
 
