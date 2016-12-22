@@ -2,6 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="Home"
+            />
 
         <item
             android:id="@+id/nav_announce"
@@ -13,8 +18,22 @@
             android:icon="@drawable/ic_schedule"
             android:title="Schedule" />
         <item
+            android:id="@+id/bugs"
+            android:icon="@drawable/v0lturebugs"
+            android:title="Report a Bug"
+            />
+        <item
+            android:id="@+id/tools"
+            android:icon="@drawable/tools"
+            android:title="Tools"
+            />
+
+        <item
             android:id="@+id/out"
+            android:icon="@drawable/ic_sign_out"
             android:title="Sign Out" />
+
+
 
     </group>
 

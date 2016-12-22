@@ -20,6 +20,22 @@
 
     </style>
 
+    -
+
+    <style name="BugsTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/input_register_bg</item>
+        <item name="colorPrimaryDark">@color/input_register</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    -
+
+    <style name="resetTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorSecondaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
 
     -
 

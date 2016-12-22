@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.csstudent.monarch.LoginActivity">
+    tools:context="com.v0lture.deAngelo.mymu.Credentials_Folder.LoginActivity">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -21,7 +21,9 @@
             android:layout_height="@dimen/logo_w_h"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="0dp"
-            android:src="@mipmap/mulogo" />
+            android:src="@mipmap/mulogo"
+            android:contentDescription=""
+            tools:ignore="ContentDescription" />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -85,7 +87,7 @@
             android:text="@string/btn_link_to_register"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="15dp" />
+            android:textSize="15sp" />
     </LinearLayout>
 
     <ProgressBar

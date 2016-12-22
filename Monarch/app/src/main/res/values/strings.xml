@@ -63,4 +63,27 @@
     </string>
 
 
+    <string-array name="letter_grades">
+        <item>--</item>
+
+        <item>A</item>
+        <item>A-</item>
+
+            <item>B+</item>
+            <item>B</item>
+            <item>B-</item>
+
+                <item>C+</item>
+                <item>C</item>
+                <item>C-</item>
+
+                    <item>D+</item>
+                    <item>D</item>
+                    <item>D-</item>
+
+                        <item>F</item>
+
+    </string-array>
+
+
 </resources>

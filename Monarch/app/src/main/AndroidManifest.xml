@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.csstudent.monarch">
+    package="com.v0lture.deAngelo.mymu">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
+    <uses-feature android:name="android.hardware.camera"    android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"  />
+
     <application
+        android:debuggable="false"
+
         android:allowBackup="true"
         android:icon="@mipmap/ic_launchernew"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".LoginActivity"
+            android:name=".Credentials_Folder.LoginActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -23,46 +28,71 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".SignUpActivity"
-            android:label="@string/title_activity_login" />
-        <activity
-            android:name=".ResetPasswordActivity"
-            android:label="@string/title_activity_reset_password" />
-        <activity
-            android:name=".NavActivity"
-            android:label="@string/title_activity_nav"
-            android:parentActivityName=".LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.csstudent.monarch.LoginActivity" />
-        </activity>
-        <activity android:name=".AnnounceActivity"
-            android:label="Announcements"
-            android:parentActivityName=".NavActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.csstudent.monarch.NavActivity"/>
-        </activity>
-        <activity android:name=".ScheduleActivity"
-            android:label="Schedule"
-            android:parentActivityName=".NavActivity">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.example.csstudent.monarch.NavActivity"/>
-        </activity>
-        <activity
-            android:name=".AboutFragment"
-            android:label="@string/title_activity_about_fragment"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".InfoFragment" />
-        <activity android:name=".SignOut"
-            android:parentActivityName=".NavActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.csstudent.monarch.LoginActivity"/>
-        </activity>
+
+                <activity
+                    android:name=".Credentials_Folder.SignUpActivity"
+                    android:label="@string/title_activity_login" />
+
+                        <activity
+                            android:name=".Credentials_Folder.ResetPasswordActivity"
+                            android:label="@string/title_activity_reset_password"
+                            android:theme="@style/resetTheme" />
+
+                         <activity
+                             android:name=".Home_Tabs.NavActivity"
+                             android:label="@string/title_activity_nav"
+                             android:parentActivityName=".Credentials_Folder.LoginActivity"
+                             android:theme="@style/AppTheme.NoActionBar">
+                                 <meta-data
+                                    android:name="android.support.PARENT_ACTIVITY"
+                                    android:value="com.v0lture.deAngelo.mymu.Credentials_Folder.LoginActivity" />
+                        </activity>
+
+                                <activity
+                                    android:name=".Anouncement_Folder.AnnounceActivity"
+                                    android:label="Announcements"
+                                    android:parentActivityName=".Home_Tabs.NavActivity">
+                                    <meta-data
+                                        android:name="android.support.PARENT_ACTIVITY"
+                                        android:value="com.v0lture.deAngelo.mymu.Home_Tabs.NavActivity" />
+                                             </activity>
+
+                                                     <activity
+                                                            android:name=".Home_Tabs.AboutFragment"
+                                                            android:label="@string/title_activity_about_fragment"
+                                                            android:theme="@style/AppTheme.NoActionBar" />
+
+                                                                 <activity android:name=".Home_Tabs.InfoFragment" />
+
+                                                                        <activity
+                                                                            android:name=".Schedule_Folder.ScheduleActivity"
+                                                                            android:label="Schedule"
+                                                                            android:parentActivityName=".Home_Tabs.NavActivity">
+                                                                                <meta-data
+                                                                                        android:name="android.support.PARENT_ACTIVITY"
+                                                                                        android:value="com.v0lture.deAngelo.mymu.Home_Tabs.NavActivity" />
+                                                                                            </activity>
+
+                                                    <activity android:name=".Tools_Fragment.ToolsActivity"
+                                                        android:label="Tools"
+                                                        android:theme="@style/AppTheme.NoActionBar"/>
+
+                                                         <activity android:name=".Tools_Fragment.SyllabusFragment" />
+
+                                                                <activity android:name=".Tools_Fragment.GPAFragment" />
+
+                                                                    <activity
+                                                                         android:name=".Bugs_Folder.Bugs"
+                                                                         android:label="Report a Bug"
+                                                                         android:theme="@style/BugsTheme" />
+
+                                                                                 <activity
+                                                                                     android:name=".Credentials_Folder.SignOut"
+                                                                                     android:parentActivityName=".Home_Tabs.NavActivity">
+                                                                                     <meta-data
+                                                                                         android:name="android.support.PARENT_ACTIVITY"
+                                                                                         android:value="com.v0lture.deAngelo.mymu.Credentials_Folder.LoginActivity" />
+                                                                                 </activity>
     </application>
 
 </manifest>

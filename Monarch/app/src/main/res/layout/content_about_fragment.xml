@@ -6,7 +6,7 @@
 
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.csstudent.monarch.AboutFragment"
+    tools:context="com.v0lture.deAngelo.mymu.Home_Tabs.AboutFragment"
     tools:showIn="@layout/about_fragment">
 
     <TextView
