@@ -11,6 +11,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.v0lture.deAngelo.mymu.Anouncement_Folder.AnnounceActivity;
 import com.v0lture.deAngelo.mymu.Bugs_Folder.Bugs;
@@ -56,6 +57,7 @@ public class NavActivity extends AppCompatActivity{
 
                 if (menuItem.getItemId() == R.id.nav_announce) {
                     startActivity(new Intent(NavActivity.this, AnnounceActivity.class));
+                    Toast.makeText(getApplicationContext(), "Click text for more info!", Toast.LENGTH_SHORT).show();
                 }
                 if (menuItem.getItemId() == R.id.nav_schedule) {
                     startActivity(new Intent(NavActivity.this, ScheduleActivity.class));

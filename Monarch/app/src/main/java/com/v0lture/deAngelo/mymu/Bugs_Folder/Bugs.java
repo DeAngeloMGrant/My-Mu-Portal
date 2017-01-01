@@ -20,7 +20,7 @@ public class Bugs extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         WebView myWebview = (WebView) findViewById(R.id.bugsWeb);
-        myWebview.loadUrl("http://testing.v0lture.com/bugs2/bug.php?bug=63");
+        myWebview.loadUrl("https://bugs.v0lture.com/");
         myWebview.setWebViewClient(new MyWebViewClient());
         WebSettings webSettings = myWebview.getSettings();
         webSettings.setJavaScriptEnabled(true);
@@ -28,7 +28,7 @@ public class Bugs extends AppCompatActivity {
     private class MyWebViewClient extends WebViewClient{
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url){
-            if (Uri.parse(url).getHost().equals("http://testing.v0lture.com/bugs2/bug.php?bug=63")){
+            if (Uri.parse(url).getHost().equals("https://bugs.v0lture.com/")){
                 return false;
             }
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));

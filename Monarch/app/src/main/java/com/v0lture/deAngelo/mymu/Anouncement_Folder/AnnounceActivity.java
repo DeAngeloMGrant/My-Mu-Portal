@@ -1,5 +1,6 @@
 package com.v0lture.deAngelo.mymu.Anouncement_Folder;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.os.Bundle;
@@ -17,12 +18,15 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.v0lture.deAngelo.mymu.Cards_Folder.Card;
 import com.v0lture.deAngelo.mymu.Cards_Folder.CardAdapter;
+import com.v0lture.deAngelo.mymu.Cards_Folder.ClickListener;
 import com.v0lture.deAngelo.mymu.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class AnnounceActivity extends AppCompatActivity {
+import static com.v0lture.deAngelo.mymu.R.drawable.card1;
+
+public class AnnounceActivity extends AppCompatActivity implements ClickListener {
     private RecyclerView recyclerView;
     private CardAdapter adapter;
     private List<Card> cardList;
@@ -87,7 +91,7 @@ public class AnnounceActivity extends AppCompatActivity {
 
     private void prepareCards() {
         int[] cards = new int[]{
-                R.drawable.card1,
+                card1,
                 R.drawable.card2,
                 R.drawable.card3,
                 R.drawable.card4,
@@ -104,6 +108,21 @@ public class AnnounceActivity extends AppCompatActivity {
         a = new Card("Dinner with the President", "Come out and enjoy a great dinner with President Hancock!", cards[4]);
         cardList.add(a);
         adapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void CardClicked(View view, int position) {
+        if(position==0){
+            Intent intent = new Intent(AnnounceActivity.this, Card1.class);
+            intent.putExtra("ItemPosition", position);
+            startActivity(intent);
+        } else if(position==1){
+            System.out.println("Clicked 2");
+        } else if(position==2){
+            System.out.println("Clicked 3");
+        } else {
+            System.out.println("Position....."+ position);
+        }
     }
 
     public class GridSpacingItemDecoration extends RecyclerView.ItemDecoration {
