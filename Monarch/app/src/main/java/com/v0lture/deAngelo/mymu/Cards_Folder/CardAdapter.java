@@ -1,6 +1,7 @@
 package com.v0lture.deAngelo.mymu.Cards_Folder;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.v0lture.deAngelo.mymu.Anouncement_Folder.Card1;
 import com.v0lture.deAngelo.mymu.R;
 
 import java.util.List;
@@ -75,6 +77,61 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.MyViewHolder> 
         holder.details.setText(card.getDetails());
 
         Glide.with(mContext).load(card.getThumbnail()).into(holder.thumbnail);
+
+        if(position==0){
+            holder.layout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent= (new Intent(view.getContext(), Card1.class));
+                    mContext.startActivity(intent);
+                }
+            });
+        }
+        if(position==1){
+            holder.layout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent= (new Intent(view.getContext(), Card1.class));
+                    mContext.startActivity(intent);
+                }
+            });
+        }
+        if(position==2){
+            holder.layout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent= (new Intent(view.getContext(), Card1.class));
+                    mContext.startActivity(intent);
+                }
+            });
+        }
+        if(position==3){
+            holder.layout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent= (new Intent(view.getContext(), Card1.class));
+                    mContext.startActivity(intent);
+                }
+            });
+        }
+        if(position==4){
+            holder.layout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent= (new Intent(view.getContext(), Card1.class));
+                    mContext.startActivity(intent);
+                }
+            });
+        }
+        if(position==5){
+            holder.layout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent= (new Intent(view.getContext(), Card1.class));
+                    mContext.startActivity(intent);
+                }
+            });
+        }
     }
 
 

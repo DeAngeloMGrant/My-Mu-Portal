@@ -17,7 +17,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.v0lture.deAngelo.mymu.Cards_Folder.Card;
-import com.v0lture.deAngelo.mymu.Cards_Folder.CardAdapter;
+import com.v0lture.deAngelo.mymu.Cards_Folder.Schedule_CardAdapter;
 import com.v0lture.deAngelo.mymu.R;
 
 import java.util.ArrayList;
@@ -25,7 +25,7 @@ import java.util.List;
 
 public class ScheduleActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
-    private CardAdapter adapter;
+    private Schedule_CardAdapter adapter;
     private List<Card> cardList;
 
     @Override
@@ -39,7 +39,7 @@ public class ScheduleActivity extends AppCompatActivity {
         initCollapsingToolbar();
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         cardList = new ArrayList<>();
-        adapter = new CardAdapter(this, cardList);
+        adapter = new Schedule_CardAdapter(this, cardList);
 
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this, 1);
         recyclerView.setLayoutManager(layoutManager);

@@ -34,7 +34,7 @@
         <activity
             android:name=".Credentials_Folder.LoginActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Credentials_Folder.SignUpActivity"
             android:label="@string/title_activity_login" />
@@ -89,7 +89,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.v0lture.deAngelo.mymu.Credentials_Folder.LoginActivity" />
         </activity>
-        <activity android:name=".Anouncement_Folder.Card1"></activity>
+        <activity android:name=".Anouncement_Folder.Card1" />
+        <activity android:name=".Schedule_Folder.Card2"></activity>
     </application>
 
 </manifest>

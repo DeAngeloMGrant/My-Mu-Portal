@@ -8,8 +8,7 @@ public class Card {
     private String details;
     private int thumbnail;
 
-    public Card(){
-    }
+
     public Card(String name, String details, int thumbnail){
         this.name = name;
         this.details = details;
