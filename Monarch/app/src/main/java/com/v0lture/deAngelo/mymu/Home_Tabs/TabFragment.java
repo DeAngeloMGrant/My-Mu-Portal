@@ -60,14 +60,15 @@ public class TabFragment extends Fragment {
          */
 
         @Override
-        public getItem(int position) {
+        public Fragment getItem(int position) {
             switch (position) {
                 case 0:
                     return new AboutFragment();
                 case 1:
                     return new InfoFragment();
 
-
+                default:
+                    System.out.println("Nope");
             }
             return null;
         }
@@ -86,7 +87,8 @@ public class TabFragment extends Fragment {
                 case 1:
                     return "Student Info";
 
-
+                default:
+                    System.out.println("Nope");
             }
             return null;
         }

@@ -24,10 +24,10 @@ import com.v0lture.deAngelo.mymu.Schedule_Folder.ScheduleActivity;
  */
 
 public class ToolsActivity extends AppCompatActivity {
-    DrawerLayout nDrawerLayout;
-    NavigationView nNavigationView;
-    FragmentManager nFragmentManager;
-    FragmentTransaction nFragmentTransaction;
+    private DrawerLayout nDrawerLayout;
+    private NavigationView nNavigationView;
+    private FragmentManager nFragmentManager;
+    private FragmentTransaction nFragmentTransaction;
 
 
     @Override

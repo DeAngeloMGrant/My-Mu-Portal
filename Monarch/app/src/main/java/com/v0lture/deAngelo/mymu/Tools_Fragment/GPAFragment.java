@@ -14,7 +14,7 @@ import android.widget.Toast;
 import com.v0lture.deAngelo.mymu.R;
 
 public class GPAFragment extends Fragment {
-    ArrayAdapter<CharSequence> adapter;
+   private  ArrayAdapter<CharSequence> adapter;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -41,27 +41,32 @@ public class GPAFragment extends Fragment {
 
 
             }
-
+            //Empty Method Body
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
 
             }
+            //Empty Method Body
+
         });
         spinner2.setAdapter(adapter);
         spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String name = null;
+//                String name = null;
                 if(spinner2 != null && spinner2.getSelectedItem()!=null){
                     Toast.makeText(getContext(), parent.getItemAtPosition(position)+" selected", Toast.LENGTH_LONG).show();
 
                 }
             }
+            //Empty Method Body
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
 
             }
+            //Empty Method Body
+
         });
         spinner3.setAdapter(adapter);
         spinner3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -73,11 +78,14 @@ public class GPAFragment extends Fragment {
 
                 }
             }
+            //Empty Method Body
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
 
             }
+            //Empty Method Body
+
         });
         spinner4.setAdapter(adapter);
         spinner4.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -89,11 +97,14 @@ public class GPAFragment extends Fragment {
 
                 }
             }
+            //Empty Method Body
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
 
             }
+            //Empty Method Body
+
         });
         spinner5.setAdapter(adapter);
         spinner5.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -105,11 +116,14 @@ public class GPAFragment extends Fragment {
 
                 }
             }
+            //Empty Method Body
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
 
             }
+            //Empty Method Body
+
         });
         spinner6.setAdapter(adapter);
         spinner6.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -121,11 +135,14 @@ public class GPAFragment extends Fragment {
 
                 }
             }
+            //Empty Method Body
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
 
             }
+            //Empty Method Body
+
         });
         return v;
     }

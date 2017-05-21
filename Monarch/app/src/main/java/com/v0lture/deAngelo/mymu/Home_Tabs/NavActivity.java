@@ -22,10 +22,10 @@ import com.v0lture.deAngelo.mymu.Tools_Fragment.ToolsActivity;
 
 
 public class NavActivity extends AppCompatActivity{
-    DrawerLayout mDrawerLayout;
-    NavigationView mNavigationView;
-    FragmentManager mFragmentManager;
-    FragmentTransaction mFragmentTransaction;
+    private DrawerLayout mDrawerLayout;
+    private NavigationView mNavigationView;
+    private FragmentManager mFragmentManager;
+    private FragmentTransaction mFragmentTransaction;
 
     //RadioButton surpriseImage;
    // RadioButton toast;

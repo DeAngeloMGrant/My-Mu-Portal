@@ -10,7 +10,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageView;
@@ -27,7 +26,6 @@ import java.util.List;
 import static com.v0lture.deAngelo.mymu.R.drawable.card1;
 
 public class AnnounceActivity extends AppCompatActivity implements ClickListener {
-    private RecyclerView recyclerView;
     private CardAdapter adapter;
     private List<Card> cardList;
 
@@ -40,7 +38,7 @@ public class AnnounceActivity extends AppCompatActivity implements ClickListener
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         initCollapsingToolbar();
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+       RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         cardList = new ArrayList<>();
         adapter = new CardAdapter(this, cardList);
 

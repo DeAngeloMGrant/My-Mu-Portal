@@ -13,12 +13,11 @@ import com.v0lture.deAngelo.mymu.Home_Tabs.NavActivity;
 public class SignOut extends NavActivity {
    // Button signOut;
 
-    private FirebaseAuth auth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        auth = FirebaseAuth.getInstance();
+       FirebaseAuth auth = FirebaseAuth.getInstance();
 
                 auth.signOut();
                 if (auth.getCurrentUser()==null){

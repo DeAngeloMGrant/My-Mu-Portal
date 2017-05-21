@@ -26,16 +26,16 @@ import java.security.SecureRandom;
 
 public class SyllabusFragment extends Fragment {
 
-    static String str_Camera_Photo_ImagePath = "";
+    private static String str_Camera_Photo_ImagePath = "";
     private static File f;
     private static int Take_Photo = 2;
     private static String str_randomnumber = "";
-    static String str_Camera_Photo_ImageName = "";
+    private static String str_Camera_Photo_ImageName = "";
     public static String str_SaveFolderName;
     private static File wallpaperDirectory;
-    Bitmap bitmap;
-    int storeposition = 0;
-    public static GridView gridview;
+    private Bitmap bitmap;
+//    int storeposition = 0;
+//    public static GridView gridview;
     public static ImageView imageView;
     @Nullable
     @Override
@@ -83,7 +83,7 @@ public class SyllabusFragment extends Fragment {
 
             filePath = str_Camera_Photo_ImagePath;
             if (filePath != null){
-                Bitmap faceView = ( new_decode(new File(
+                Bitmap faceView = ( newdecode(new File(
                         filePath)));
                 imageView.setImageBitmap(faceView);
             }else{
@@ -91,7 +91,8 @@ public class SyllabusFragment extends Fragment {
             }
         }
     }
-    public static Bitmap new_decode(File f){
+    public static Bitmap newdecode(File f){
+        BitmapFactory.Options o = new BitmapFactory.Options();
         o.inJustDecodeBounds = true;
         o.inDither = false;
         o.inPurgeable = true;
@@ -104,7 +105,8 @@ public class SyllabusFragment extends Fragment {
         }
 
         final int REQUIRED_SIZE = 300;
-        int width_tmp = o.outWidth, height_tmp = o.outHeight;
+        int width_tmp = o.outWidth,
+        height_tmp = o.outHeight;
         int scale = 1;
         while(true){
             if (width_tmp/1.5<REQUIRED_SIZE&&height_tmp/1.5<REQUIRED_SIZE)
@@ -113,7 +115,7 @@ public class SyllabusFragment extends Fragment {
             height_tmp /= 1.5;
             scale *= 1.5;
         }
-        BitmapFactory.Options o2 = new BitmapFactory.Options();
+//        BitmapFactory.Options o2 = new BitmapFactory.Options();
         o.inDither = false;
         o.inPurgeable = true;
         o.inInputShareable = true;

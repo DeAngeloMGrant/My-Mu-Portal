@@ -24,7 +24,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ScheduleActivity extends AppCompatActivity {
-    private RecyclerView recyclerView;
     private Schedule_CardAdapter adapter;
     private List<Card> cardList;
 
@@ -36,7 +35,7 @@ public class ScheduleActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         initCollapsingToolbar();
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         cardList = new ArrayList<>();
         adapter = new Schedule_CardAdapter(this, cardList);
 

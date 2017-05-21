@@ -10,6 +10,7 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.v0lture.deAngelo.mymu.R;
 
@@ -42,11 +43,13 @@ public class ToolTabFragment extends Fragment {
         public ToolMyAdapter(FragmentManager fragmentManager){
             super(fragmentManager);
         }
-        public ToolMyAdapter(Object childFragmentManager){
+
+
+        /*public ToolMyAdapter(Object childFragmentManager){
             super((FragmentManager) childFragmentManager);
-        }
+        }*/
         @Override
-        public  getItem(int position) {
+        public  Fragment getItem(int position) {
             switch (position) {
                 case 0:
                     return new GPAFragment();
@@ -54,6 +57,9 @@ public class ToolTabFragment extends Fragment {
                     return new SyllabusFragment();
                 case 2:
                     return new AdvisingFragment();
+
+                default:
+                    Toast.makeText(getContext(), "Invalid Choice", Toast.LENGTH_SHORT).show();
 
             }
             return null;

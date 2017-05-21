@@ -7,5 +7,5 @@ import android.view.View;
  */
 
 public interface ClickListener {
-     void CardClicked(View view, int position);
+     void cardClicked(View view, int position);
 }

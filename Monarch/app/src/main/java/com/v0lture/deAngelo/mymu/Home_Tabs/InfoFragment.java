@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -18,12 +19,12 @@ import com.google.firebase.database.ValueEventListener;
 import com.v0lture.deAngelo.mymu.R;
 
 public class InfoFragment extends Fragment {
-    EditText mID;
+    //EditText mID;
     TextView stuName;
-    Button mSearch;
+   // Button mSearch;
 
-    DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
-    DatabaseReference mConditionRef = mRootRef.child("condition");
+   private  DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
+    private DatabaseReference mConditionRef = mRootRef.child("condition");
 
 
     @Nullable
@@ -47,12 +48,13 @@ public class InfoFragment extends Fragment {
                     stuName.setText(text);
 
                 }else{
-                    //Toast.makeText(getActivity(), getString(Integer.parseInt("You are not a student")), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity(), getString(Integer.parseInt("You are not a student")), Toast.LENGTH_LONG).show();
                 }
             }
-
+        //Empty Method Body
             @Override
             public void onCancelled(DatabaseError databaseError) {
+        //Empty Method Body
 
             }
         });
