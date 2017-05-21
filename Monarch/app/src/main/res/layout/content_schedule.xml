@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/viewBg"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.v0lture.deAngelo.mymu.Schedule_Folder.ScheduleActivity"
+    tools:context="com.v0lture.deAngelo.mymu.schedule_folder.ScheduleActivity"
     tools:showIn="@layout/activity_schedule">
 
     <android.support.v7.widget.RecyclerView

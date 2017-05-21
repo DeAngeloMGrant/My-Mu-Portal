@@ -1,4 +1,4 @@
-package com.v0lture.deAngelo.mymu.Cards_Folder;
+package com.v0lture.deAngelo.mymu.cards_folder;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,14 +14,14 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.v0lture.deAngelo.mymu.R;
-import com.v0lture.deAngelo.mymu.Schedule_Folder.Card2;
+import com.v0lture.deAngelo.mymu.schedule_folder.Card2;
 
 import java.util.List;
 
 /**
  * Created by De'Angelo on 1/7/2017.
  */
-    public class Schedule_CardAdapter extends RecyclerView.Adapter<com.v0lture.deAngelo.mymu.Cards_Folder.Schedule_CardAdapter.MyViewHolder> {
+    public class Schedule_CardAdapter extends RecyclerView.Adapter<com.v0lture.deAngelo.mymu.cards_folder.Schedule_CardAdapter.MyViewHolder> {
         private Context mContext;
         private List<Card> cardList;
         private ClickListener clicklistener =null;
@@ -67,7 +67,7 @@ import java.util.List;
             View itemView  = LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.card, parent, false);
 
-            return new com.v0lture.deAngelo.mymu.Cards_Folder.Schedule_CardAdapter.MyViewHolder(itemView);
+            return new com.v0lture.deAngelo.mymu.cards_folder.Schedule_CardAdapter.MyViewHolder(itemView);
         }
 
     @Override

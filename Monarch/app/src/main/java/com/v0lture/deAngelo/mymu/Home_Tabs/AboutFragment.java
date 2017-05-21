@@ -1,4 +1,4 @@
-package com.v0lture.deAngelo.mymu.Home_Tabs;
+package com.v0lture.deAngelo.mymu.home_tabs;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

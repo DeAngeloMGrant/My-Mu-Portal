@@ -1,4 +1,4 @@
-package com.v0lture.deAngelo.mymu.Tools_Fragment;
+package com.v0lture.deAngelo.mymu.tools_fragment;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -13,7 +13,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.GridView;
 import android.widget.ImageView;
 
 import com.v0lture.deAngelo.mymu.R;
@@ -30,10 +29,10 @@ public class SyllabusFragment extends Fragment {
     private static File f;
     private static int Take_Photo = 2;
     private static String str_randomnumber = "";
-    private static String str_Camera_Photo_ImageName = "";
+    public static String str_Camera_Photo_ImageName = "";
     public static String str_SaveFolderName;
     private static File wallpaperDirectory;
-    private Bitmap bitmap;
+    public Bitmap bitmap;
 //    int storeposition = 0;
 //    public static GridView gridview;
     public static ImageView imageView;

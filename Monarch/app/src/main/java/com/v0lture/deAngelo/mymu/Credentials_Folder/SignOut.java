@@ -1,10 +1,10 @@
-package com.v0lture.deAngelo.mymu.Credentials_Folder;
+package com.v0lture.deAngelo.mymu.credentials_folder;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.v0lture.deAngelo.mymu.Home_Tabs.NavActivity;
+import com.v0lture.deAngelo.mymu.home_tabs.NavActivity;
 
 /**
  * Created by De'Angelo on 12/7/2016.

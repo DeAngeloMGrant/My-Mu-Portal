@@ -1,4 +1,4 @@
-package com.v0lture.deAngelo.mymu.Credentials_Folder;
+package com.v0lture.deAngelo.mymu.credentials_folder;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;

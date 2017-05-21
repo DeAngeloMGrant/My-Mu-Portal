@@ -1,4 +1,4 @@
-package com.v0lture.deAngelo.mymu.Tools_Fragment;
+package com.v0lture.deAngelo.mymu.tools_fragment;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -57,9 +57,9 @@ public class ToolTabFragment extends Fragment {
                     return new SyllabusFragment();
                 case 2:
                     return new AdvisingFragment();
-
                 default:
                     Toast.makeText(getContext(), "Invalid Choice", Toast.LENGTH_SHORT).show();
+                    break;
 
             }
             return null;
@@ -79,7 +79,9 @@ public class ToolTabFragment extends Fragment {
                     return "Syllabus";
                 case 2:
                     return "Advising";
-
+                default:
+                    Toast.makeText(getContext(), "Invalid Choice", Toast.LENGTH_SHORT).show();
+                    break;
             }
             return null;
         }

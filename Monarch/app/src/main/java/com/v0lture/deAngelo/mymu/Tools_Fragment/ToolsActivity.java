@@ -1,4 +1,4 @@
-package com.v0lture.deAngelo.mymu.Tools_Fragment;
+package com.v0lture.deAngelo.mymu.tools_fragment;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -12,12 +12,12 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
-import com.v0lture.deAngelo.mymu.Anouncement_Folder.AnnounceActivity;
-import com.v0lture.deAngelo.mymu.Bugs_Folder.Bugs;
-import com.v0lture.deAngelo.mymu.Credentials_Folder.SignOut;
-import com.v0lture.deAngelo.mymu.Home_Tabs.NavActivity;
+import com.v0lture.deAngelo.mymu.anouncement_folder.AnnounceActivity;
+import com.v0lture.deAngelo.mymu.bugs_folder.Bugs;
+import com.v0lture.deAngelo.mymu.credentials_folder.SignOut;
+import com.v0lture.deAngelo.mymu.home_tabs.NavActivity;
 import com.v0lture.deAngelo.mymu.R;
-import com.v0lture.deAngelo.mymu.Schedule_Folder.ScheduleActivity;
+import com.v0lture.deAngelo.mymu.schedule_folder.ScheduleActivity;
 
 /**
  * Created by De'Angelo on 12/20/2016.
@@ -36,10 +36,10 @@ public class ToolsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tools);
 
         nDrawerLayout = (DrawerLayout)findViewById(R.id.tool_drawer_layout);
-        nNavigationView = (NavigationView)findViewById(R.id.tool_view);
+        NavigationView nNavigationView = (NavigationView)findViewById(R.id.tool_view);
 
-        nFragmentManager = getSupportFragmentManager();
-        nFragmentTransaction = nFragmentManager.beginTransaction();
+        FragmentManager nFragmentManager = getSupportFragmentManager();
+        FragmentTransaction nFragmentTransaction = nFragmentManager.beginTransaction();
         nFragmentTransaction.replace(R.id.toolContainerView, new ToolTabFragment()).commit();
 
         nNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener(){

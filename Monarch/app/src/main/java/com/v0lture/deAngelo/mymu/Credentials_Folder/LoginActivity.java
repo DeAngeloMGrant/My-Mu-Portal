@@ -1,4 +1,4 @@
-package com.v0lture.deAngelo.mymu.Credentials_Folder;
+package com.v0lture.deAngelo.mymu.credentials_folder;
 
 /**
  * Created by csstudent on 11/28/2016.
@@ -19,7 +19,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.v0lture.deAngelo.mymu.Home_Tabs.NavActivity;
+import com.v0lture.deAngelo.mymu.home_tabs.NavActivity;
 import com.v0lture.deAngelo.mymu.R;
 
 public class LoginActivity extends AppCompatActivity {

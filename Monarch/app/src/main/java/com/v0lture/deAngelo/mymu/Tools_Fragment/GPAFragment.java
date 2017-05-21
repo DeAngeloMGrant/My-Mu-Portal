@@ -1,4 +1,4 @@
-package com.v0lture.deAngelo.mymu.Tools_Fragment;
+package com.v0lture.deAngelo.mymu.tools_fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,7 +14,6 @@ import android.widget.Toast;
 import com.v0lture.deAngelo.mymu.R;
 
 public class GPAFragment extends Fragment {
-   private  ArrayAdapter<CharSequence> adapter;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -26,7 +25,7 @@ public class GPAFragment extends Fragment {
         final Spinner spinner4 = (Spinner) v.findViewById(R.id.spinner4);
         final Spinner spinner5 = (Spinner) v.findViewById(R.id.spinner5);
         final Spinner spinner6 = (Spinner) v.findViewById(R.id.spinner6);
-        adapter = ArrayAdapter.createFromResource(this.getActivity(),R.array.letter_grades,android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this.getActivity(),R.array.letter_grades,android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
 

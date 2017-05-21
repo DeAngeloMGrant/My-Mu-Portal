@@ -1,4 +1,4 @@
-package com.v0lture.deAngelo.mymu.Schedule_Folder;
+package com.v0lture.deAngelo.mymu.schedule_folder;
 
 
 import android.content.res.Resources;
@@ -10,14 +10,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.v0lture.deAngelo.mymu.Cards_Folder.Card;
-import com.v0lture.deAngelo.mymu.Cards_Folder.Schedule_CardAdapter;
+import com.v0lture.deAngelo.mymu.cards_folder.Card;
+import com.v0lture.deAngelo.mymu.cards_folder.Schedule_CardAdapter;
 import com.v0lture.deAngelo.mymu.R;
 
 import java.util.ArrayList;

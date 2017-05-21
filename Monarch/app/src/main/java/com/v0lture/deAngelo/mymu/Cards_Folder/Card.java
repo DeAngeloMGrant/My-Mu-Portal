@@ -1,4 +1,4 @@
-package com.v0lture.deAngelo.mymu.Cards_Folder;
+package com.v0lture.deAngelo.mymu.cards_folder;
 
 /**
  * Created by csstudent on 11/30/2016.

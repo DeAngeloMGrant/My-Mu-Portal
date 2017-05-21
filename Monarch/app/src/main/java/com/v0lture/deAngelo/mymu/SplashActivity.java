@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.v0lture.deAngelo.mymu.Credentials_Folder.LoginActivity;
+import com.v0lture.deAngelo.mymu.credentials_folder.LoginActivity;
 
 /**
  * Created by De'Angelo on 12/30/2016.

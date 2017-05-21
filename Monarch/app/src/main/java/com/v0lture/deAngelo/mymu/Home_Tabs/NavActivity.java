@@ -1,4 +1,4 @@
-package com.v0lture.deAngelo.mymu.Home_Tabs;
+package com.v0lture.deAngelo.mymu.home_tabs;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -13,19 +13,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.v0lture.deAngelo.mymu.Anouncement_Folder.AnnounceActivity;
-import com.v0lture.deAngelo.mymu.Bugs_Folder.Bugs;
+import com.v0lture.deAngelo.mymu.anouncement_folder.AnnounceActivity;
+import com.v0lture.deAngelo.mymu.bugs_folder.Bugs;
 import com.v0lture.deAngelo.mymu.R;
-import com.v0lture.deAngelo.mymu.Schedule_Folder.ScheduleActivity;
-import com.v0lture.deAngelo.mymu.Credentials_Folder.SignOut;
-import com.v0lture.deAngelo.mymu.Tools_Fragment.ToolsActivity;
+import com.v0lture.deAngelo.mymu.schedule_folder.ScheduleActivity;
+import com.v0lture.deAngelo.mymu.credentials_folder.SignOut;
+import com.v0lture.deAngelo.mymu.tools_fragment.ToolsActivity;
 
 
 public class NavActivity extends AppCompatActivity{
     private DrawerLayout mDrawerLayout;
-    private NavigationView mNavigationView;
-    private FragmentManager mFragmentManager;
-    private FragmentTransaction mFragmentTransaction;
 
     //RadioButton surpriseImage;
    // RadioButton toast;
@@ -42,10 +39,10 @@ public class NavActivity extends AppCompatActivity{
 
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mNavigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView mNavigationView = (NavigationView) findViewById(R.id.nav_view);
 
-        mFragmentManager = getSupportFragmentManager();
-        mFragmentTransaction = mFragmentManager.beginTransaction();
+       FragmentManager mFragmentManager = getSupportFragmentManager();
+        FragmentTransaction mFragmentTransaction = mFragmentManager.beginTransaction();
         mFragmentTransaction.replace(R.id.containerView, new TabFragment()).commit();
 
 

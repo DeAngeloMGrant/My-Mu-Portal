@@ -1,4 +1,4 @@
-package com.v0lture.deAngelo.mymu.Home_Tabs;
+package com.v0lture.deAngelo.mymu.home_tabs;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -69,6 +69,7 @@ public class TabFragment extends Fragment {
 
                 default:
                     System.out.println("Nope");
+                    break;
             }
             return null;
         }
@@ -89,6 +90,7 @@ public class TabFragment extends Fragment {
 
                 default:
                     System.out.println("Nope");
+                    break;
             }
             return null;
         }

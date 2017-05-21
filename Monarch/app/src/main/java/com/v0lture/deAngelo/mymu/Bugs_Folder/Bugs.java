@@ -1,4 +1,4 @@
-package com.v0lture.deAngelo.mymu.Bugs_Folder;
+package com.v0lture.deAngelo.mymu.bugs_folder;
 
 import android.content.Intent;
 import android.net.Uri;

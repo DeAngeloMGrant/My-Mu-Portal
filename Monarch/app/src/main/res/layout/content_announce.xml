@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/viewBg"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.v0lture.deAngelo.mymu.Anouncement_Folder.AnnounceActivity"
+    tools:context="com.v0lture.deAngelo.mymu.anouncement_folder.AnnounceActivity"
     tools:showIn="@layout/activity_announce">
 
     <android.support.v7.widget.RecyclerView

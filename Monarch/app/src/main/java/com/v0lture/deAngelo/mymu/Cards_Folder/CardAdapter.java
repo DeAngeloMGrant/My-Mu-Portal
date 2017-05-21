@@ -1,4 +1,4 @@
-package com.v0lture.deAngelo.mymu.Cards_Folder;
+package com.v0lture.deAngelo.mymu.cards_folder;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,7 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.v0lture.deAngelo.mymu.Anouncement_Folder.Card1;
+import com.v0lture.deAngelo.mymu.anouncement_folder.Card1;
 import com.v0lture.deAngelo.mymu.R;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.v0lture.deAngelo.mymu.Home_Tabs;
+package com.v0lture.deAngelo.mymu.home_tabs;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,8 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,7 +18,7 @@ import com.v0lture.deAngelo.mymu.R;
 
 public class InfoFragment extends Fragment {
     //EditText mID;
-    TextView stuName;
+    public TextView stuName;
    // Button mSearch;
 
    private  DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();

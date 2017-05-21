@@ -1,4 +1,4 @@
-package com.v0lture.deAngelo.mymu.Schedule_Folder;
+package com.v0lture.deAngelo.mymu.schedule_folder;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

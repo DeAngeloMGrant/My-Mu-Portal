@@ -1,4 +1,4 @@
-package com.v0lture.deAngelo.mymu.Anouncement_Folder;
+package com.v0lture.deAngelo.mymu.anouncement_folder;
 
 import android.content.Intent;
 import android.content.res.Resources;
@@ -15,9 +15,9 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.v0lture.deAngelo.mymu.Cards_Folder.Card;
-import com.v0lture.deAngelo.mymu.Cards_Folder.CardAdapter;
-import com.v0lture.deAngelo.mymu.Cards_Folder.ClickListener;
+import com.v0lture.deAngelo.mymu.cards_folder.Card;
+import com.v0lture.deAngelo.mymu.cards_folder.CardAdapter;
+import com.v0lture.deAngelo.mymu.cards_folder.ClickListener;
 import com.v0lture.deAngelo.mymu.R;
 
 import java.util.ArrayList;
@@ -108,7 +108,7 @@ public class AnnounceActivity extends AppCompatActivity implements ClickListener
     }
 
     @Override
-    public void CardClicked(View view, int position) {
+    public void cardClicked(View view, int position) {
         if(position==0){
             Intent intent = new Intent(AnnounceActivity.this, Card1.class);
             intent.putExtra("ItemPosition", position);

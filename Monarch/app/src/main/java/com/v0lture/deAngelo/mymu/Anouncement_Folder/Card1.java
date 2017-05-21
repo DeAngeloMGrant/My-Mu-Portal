@@ -1,4 +1,4 @@
-package com.v0lture.deAngelo.mymu.Anouncement_Folder;
+package com.v0lture.deAngelo.mymu.anouncement_folder;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

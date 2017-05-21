@@ -1,4 +1,4 @@
-package com.v0lture.deAngelo.mymu.Cards_Folder;
+package com.v0lture.deAngelo.mymu.cards_folder;
 
 import android.view.View;
 
