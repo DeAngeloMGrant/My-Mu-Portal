@@ -60,7 +60,7 @@ public class TabFragment extends Fragment {
          */
 
         @Override
-        public android.support.v4.app.Fragment getItem(int position) {
+        public getItem(int position) {
             switch (position) {
                 case 0:
                     return new AboutFragment();

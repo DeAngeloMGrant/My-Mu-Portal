@@ -34,7 +34,6 @@ public class GPAFragment extends Fragment {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String name = null;
                 if(spinner!= null && spinner.getSelectedItem()!=null){
                     Toast.makeText(getContext(), parent.getItemAtPosition(position)+" selected", Toast.LENGTH_LONG).show();
 

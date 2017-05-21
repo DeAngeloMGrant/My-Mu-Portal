@@ -46,7 +46,7 @@ public class ToolTabFragment extends Fragment {
             super((FragmentManager) childFragmentManager);
         }
         @Override
-        public android.support.v4.app.Fragment getItem(int position) {
+        public  getItem(int position) {
             switch (position) {
                 case 0:
                     return new GPAFragment();

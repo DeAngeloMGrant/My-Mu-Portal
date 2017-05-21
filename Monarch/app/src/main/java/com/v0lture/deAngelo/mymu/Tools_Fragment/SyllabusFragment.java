@@ -25,7 +25,6 @@ import java.math.BigInteger;
 import java.security.SecureRandom;
 
 public class SyllabusFragment extends Fragment {
-    private static final int CAMERA_REQUEST = 1888;
 
     static String str_Camera_Photo_ImagePath = "";
     private static File f;
@@ -93,7 +92,6 @@ public class SyllabusFragment extends Fragment {
         }
     }
     public static Bitmap new_decode(File f){
-        BitmapFactory.Options o = new BitmapFactory.Options();
         o.inJustDecodeBounds = true;
         o.inDither = false;
         o.inPurgeable = true;
